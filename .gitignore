@@ -1,0 +1,91 @@
+venv
+# Python
+*.py[cod]
+*.egg*
+local_dev.py
+.mypy_cache
+__pycache__/
+
+# Editors
+.idea/
+.vscode/
+
+*.swp
+*.pyc
+.DS_Store
+/.coverage
+/dist/
+/build/
+/MANIFEST
+/wagtail.egg-info/
+/docs/_build/
+/.tox/
+/venv
+/node_modules/
+npm-debug.log*
+*.idea/
+/*.egg/
+/.cache/
+/.pytest_cache/
+/media/
+venv
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+### Databases
+*.sqlite3
+
+### Local static files
+/static/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*~
+*.todo
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Local files
+local.py
+.env
+
+nginx-error.log
