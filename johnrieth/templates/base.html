@@ -18,7 +18,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="{% static 'img/favicon.ico' %}">
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/johnrieth.css' %}">
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/johnrieth.css' %}">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -26,6 +27,11 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+        <header>
+            <a href="/">Home</a>
+            <a href="/notes/">Notes</a>
+        </header>
+
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}

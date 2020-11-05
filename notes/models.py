@@ -7,6 +7,17 @@ from wagtail.core import blocks
 from wagtail.admin.edit_handlers import FieldPanel, StreamFieldPanel
 from wagtail.images.blocks import ImageChooserBlock
 
+
+class NotesIndexPage(Page):
+    intro = StreamField([
+        ('text', blocks.RichTextBlock()),
+    ])
+
+    content_panels = Page.content_panels + [
+        StreamFieldPanel('intro'),
+    ]
+    
+
 class NotesPage(Page):
     author = models.CharField(max_length=255, blank=True)
     date = models.DateField("Post date")
