@@ -18,8 +18,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="{% static 'img/favicon.ico' %}">
         {# Global stylesheets #}
-        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-        <link rel="stylesheet" href="{% static 'css/johnrieth.css' %}">
+        <link rel="stylesheet" href="{% static '182.css' %}">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -27,17 +26,19 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-        <header>
-            <a href="/">Home</a>
-            <a href="/notes/">Notes</a>
-        </header>
+      
 
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/johnrieth.js' %}"></script>
+        <script type="text/javascript" src="{% static '734.53c704348ac1c594d9b6.js' %}"></script>
+        <script type="text/javascript" src="{% static 'index.8fbe9689aae4fa61a115.js' %}"></script>
+        <script type="text/javascript" src="{% static 'runtime.0fa0cef7eb1016416290.js' %}"></script>
+        <script type="text/javascript" src="{% static 'styles.18cfdfa0ff3594ca82b4.js' %}"></script>
+
+
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
