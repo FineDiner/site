@@ -11,7 +11,7 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'johnrieth/static'),
-    filename: '[name].[contenthash].js'
+    filename: '[name].js'
   },
   module: {
     rules: [
