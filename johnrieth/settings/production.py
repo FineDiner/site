@@ -17,6 +17,9 @@ DATABASES = {
     'default': env.db(),
 }
 
+ALLOWED_HOSTS = ['johnrieth.com', 'www.johnrieth.com'] 
+
+
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
