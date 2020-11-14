@@ -17,7 +17,7 @@ DATABASES = {
     'default': env.db(),
 }
 
-ALLOWED_HOSTS = ['johnrieth.com', 'www.johnrieth.com'] 
+ALLOWED_HOSTS = ['johnrieth.com', 'www.johnrieth.com', '127.0.0.1', 'localhost'] 
 
 
 
